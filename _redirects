@@ -1,18 +1,28 @@
-/services/curtain-rods-blinds  /services/curtain-rods-blinds.html  301!
-/services/interior-design      /services/interior-design.html      301!
-/services/kitchen-fittings     /services/kitchen-fittings.html     301!
-/services/waterproofing        /services/waterproofing.html        301!
-/services/tiling               /services/tiling.html               301!
-/services/aluminium-products   /services/aluminium-products.html   301!
-/services/painting             /services/painting.html             301!
-/services/paving               /services/paving.html               301!
-/thank-you                    /thank-you.html                     301!
-/curtain-rods-blinds    /services/curtain-rods-blinds.html   200
-/interior-design        /services/interior-design.html         200
-/kitchen-fittings       /services/kitchen-fittings.html        200
-/waterproofing          /services/waterproofing.html           200
-/tiling                 /services/tiling.html                  200
-/aluminium-products     /services/aluminium-products.html      200
-/painting               /services/painting.html                200
-/paving                 /services/paving.html                  200
-/kitchens               /services/kitchen-fittings.html        200
+# Canonical URL redirects for services
+/services/aluminium-products        /services/aluminum-products.html    301!
+/services/curtain-rods-blinds       /services/blinds-and-curtain-rods.html 301!
+/services/painting                  /services/professional-painting.html 301!
+/services/tiling                    /services/expert-tiling.html 301!
+/services/paving                    /services/paving-solutions.html 301!
+/services/kitchen-fittings          /services/kitchen-renovations.html 301!
+
+# Clean URLs without .html extension
+/services/aluminum-products         /services/aluminum-products.html    200
+/services/blinds-and-curtain-rods   /services/blinds-and-curtain-rods.html 200
+/services/professional-painting     /services/professional-painting.html 200
+/services/expert-tiling             /services/expert-tiling.html 200
+/services/paving-solutions          /services/paving-solutions.html 200
+/services/kitchen-renovations       /services/kitchen-renovations.html 200
+/services/interior-design           /services/interior-design.html 200
+/services/waterproofing             /services/waterproofing.html 200
+/thank-you                          /thank-you.html 301!
+
+# Old paths for backwards compatibility
+/curtain-rods-blinds                /services/blinds-and-curtain-rods.html 200
+/interior-design                    /services/interior-design.html 200
+/kitchens                           /services/kitchen-renovations.html 200
+/waterproofing                      /services/waterproofing.html 200
+/tiling                             /services/expert-tiling.html 200
+/aluminium-products                 /services/aluminum-products.html 200
+/painting                           /services/professional-painting.html 200
+/paving                             /services/paving-solutions.html 200

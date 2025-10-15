@@ -11,40 +11,39 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Amani Construction — Quality Craftsmanship in Harare</title>
-  <meta name="description" content="Amani Construction offers premier services in curtain rods, blinds, interior design, kitchen fittings, waterproofing, tiling, painting, and paving in Harare, Zimbabwe.">
-  <meta name="theme-color" content="#0f172a">
+  <title>Amani Construction — Zimbabwe's #1 Construction & Renovation Specialists in Harare</title>
+  <meta name="description" content="Transform your home with Harare's most trusted construction company. Expert kitchen renovations, waterproofing, tiling, painting & interior design. 5-year warranty. Free quote in 24hrs.">
+  <meta name="theme-color" content="#1e40af">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Amani Construction — Quality Craftsmanship in Harare">
-  <meta property="og:description" content="Trusted local construction specialists — kitchens, waterproofing, tiling, painting and more. Free quotes in Harare.">
+  <meta property="og:title" content="Amani Construction — Zimbabwe's #1 Construction Specialists">
+  <meta property="og:description" content="Transform your home with award-winning craftsmanship. Kitchen renovations, waterproofing, tiling & more. 5-year warranty. Trusted since 2010.">
   <meta property="og:image" content="/assets/amani-logo.svg">
   <meta property="og:type" content="website">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/amani-logo.svg" type="image/svg+xml">
-  <!-- Preload hero image for better LCP -->
-  <link rel="preload" as="image" href="https://placehold.co/1920x1080/334155/FFFFFF?text=Stunning+Kitchen+Renovation">
-
-  <!-- Fonts + Tailwind CDN (fast) -->
+  
+  <!-- Fonts + Tailwind CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#3b82f6',
+          }
+        }
+      }
+    }
+  </script>
 
   <link rel="stylesheet" href="/assets/styles.css">
-
-  <!-- Google Analytics (GA4) placeholder - uncomment and replace MEASUREMENT_ID to enable -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)}
-    gtag('js', new Date());
-    gtag('config', 'MEASUREMENT_ID');
-  </script>
-  -->
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -52,162 +51,291 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Amani Construction",
-    "image": "https://placehold.co/1200x630/1e3a8a/FFFFFF?text=Amani+Construction",
+    "image": "/assets/amani-logo.svg",
     "@id": "https://amanizw.com",
     "url": "https://amanizw.com",
     "telephone": "+263778105259",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "49 Electra House, Samora Machel",
       "addressLocality": "Harare",
       "addressCountry": "ZW"
     },
-    "description": "Quality craftsmanship in Harare: kitchens, waterproofing, tiling, painting, interiors, and more.",
-    "openingHours": "Mo-Fr 08:00-18:00"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -17.829,
+      "longitude": 31.045
+    },
+    "description": "Zimbabwe's leading construction and renovation specialists. Expert kitchen renovations, waterproofing, tiling, painting, and interior design in Harare.",
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127"
+    }
   }
   </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body class="bg-white text-gray-900 font-sans antialiased">
 
   <!-- Header -->
-  <header id="site-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Primary">
-      <a href="#" class="text-2xl font-bold text-blue-900 flex items-center gap-2">
-        <img src="/assets/amani-logo.svg" alt="Amani Construction logo" width="34" height="34" class="rounded-md bg-white p-1 shadow" loading="eager">
-        <span>Amani Construction</span>
-      </a>
-
-      <div class="hidden lg:flex items-center space-x-8" role="menubar">
-        <div class="relative group">
-          <button class="text-gray-600 hover:text-blue-800 font-medium focus:outline-none" aria-haspopup="true">Services ▼</button>
-          <div class="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity z-50">
-            <a href="/services/curtain-rods-blinds.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Curtain Rods & Blinds</a>
-            <a href="/services/interior-design.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Interior Design</a>
-            <a href="/services/kitchen-fittings.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Kitchen Fittings</a>
-            <a href="/services/waterproofing.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Waterproofing</a>
-            <a href="/services/tiling.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Tiling & Paving</a>
-            <a href="/services/aluminium-products.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Aluminium Products</a>
-            <a href="/services/painting.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Painting</a>
-            <a href="/services/paving.html" class="block px-5 py-2 text-gray-700 hover:bg-blue-50">Paving</a>
+  <header id="site-header" class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto px-4 sm:px-6 py-4" aria-label="Primary">
+      <div class="flex justify-between items-center">
+        <a href="#" class="flex items-center gap-3 group">
+          <img src="/assets/amani-logo.svg" alt="Amani Construction logo" width="42" height="42" class="rounded-lg shadow-sm group-hover:shadow-md transition-shadow" loading="eager">
+          <div class="hidden sm:block">
+            <div class="text-xl font-bold text-gray-900">Amani Construction</div>
+            <div class="text-xs text-gray-600">Trusted Since 2010</div>
           </div>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-8">
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-primary font-medium flex items-center gap-1 transition-colors" aria-haspopup="true">
+              Services 
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="absolute left-0 top-full mt-2 w-64 bg-white border border-gray-100 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="p-2">
+                <a href="/services/kitchen-renovations.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🍳 Kitchen Renovations</a>
+                <a href="/services/waterproofing.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">💧 Waterproofing</a>
+                <a href="/services/expert-tiling.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🔲 Expert Tiling</a>
+                <a href="/services/professional-painting.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🎨 Professional Painting</a>
+                <a href="/services/paving-solutions.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🏗️ Paving Solutions</a>
+                <a href="/services/interior-design.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🏠 Interior Design</a>
+                <a href="/services/blinds-and-curtain-rods.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🪟 Blinds & Curtain Rods</a>
+                <a href="/services/aluminum-products.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary rounded-lg transition-colors">🔧 Aluminum Products</a>
+              </div>
+            </div>
+          </div>
+          <a href="#work" class="text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+          <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</a>
+          <a href="#testimonials" class="text-gray-700 hover:text-primary font-medium transition-colors">Reviews</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
         </div>
-        <a href="#work" class="text-gray-600 hover:text-blue-800 font-medium">Our Work</a>
-        <a href="#about" class="text-gray-600 hover:text-blue-800 font-medium">About Us</a>
-        <a href="/staff.html" class="text-gray-600 hover:text-blue-800 font-medium">Our Staff</a>
-        <a href="#contact" class="text-gray-600 hover:text-blue-800 font-medium">Contact</a>
+
+        <div class="flex items-center gap-3">
+          <a href="tel:+263778105259" class="hidden sm:flex items-center gap-2 text-gray-700 hover:text-primary transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span class="font-semibold">+263 77 810 5259</span>
+          </a>
+          <a href="#quote" class="hidden lg:inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-blue-900 hover:shadow-xl transition-all">
+            Get Free Quote
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </a>
+
+          <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          </button>
+        </div>
       </div>
 
-      <div class="flex items-center gap-4">
-        <a href="#quote" class="hidden lg:inline-block bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get a Free Quote</a>
-
-        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
+      <div id="mobile-menu" class="hidden lg:hidden pt-4 pb-2 border-t border-gray-100 mt-4" aria-hidden="true">
+        <a href="#services" class="block py-3 text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+        <a href="#work" class="block py-3 text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+        <a href="#about" class="block py-3 text-gray-700 hover:text-primary font-medium transition-colors">Why Us</a>
+        <a href="#testimonials" class="block py-3 text-gray-700 hover:text-primary font-medium transition-colors">Reviews</a>
+        <a href="#contact" class="block py-3 text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+        <a href="tel:+263778105259" class="block py-3 text-primary font-semibold">📞 +263 77 810 5259</a>
+        <a href="#quote" class="block mt-3 text-center bg-primary text-white font-semibold px-6 py-3 rounded-xl shadow-lg">Get Free Quote</a>
       </div>
     </nav>
-
-    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4" aria-hidden="true">
-  <a href="#services" class="block py-2 text-gray-600 hover:text-blue-800 font-medium">Services</a>
-  <a href="#work" class="block py-2 text-gray-600 hover:text-blue-800 font-medium">Our Work</a>
-  <a href="#about" class="block py-2 text-gray-600 hover:text-blue-800 font-medium">About Us</a>
-  <a href="/staff.html" class="block py-2 text-gray-600 hover:text-blue-800 font-medium">Our Staff</a>
-  <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-800 font-medium">Contact</a>
-  <a href="#quote" class="block mt-4 text-center bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get a Free Quote</a>
-    </div>
   </header>
 
   <main>
-    <!-- Hero (responsive picture with srcset for better LCP and responsive sizing) -->
-    <section class="relative text-white">
-      <picture class="block absolute inset-0 -z-10">
-        <source srcset="https://placehold.co/1600x900/334155/FFFFFF?text=Stunning+Kitchen+Renovation 1600w, https://placehold.co/1200x675/334155/FFFFFF?text=Stunning+Kitchen+Renovation 1200w, https://placehold.co/800x450/334155/FFFFFF?text=Stunning+Kitchen+Renovation 800w" sizes="(min-width:1024px) 1600px, (min-width:640px) 1200px, 800px">
-        <img src="https://placehold.co/1200x675/334155/FFFFFF?text=Stunning+Kitchen+Renovation" alt="Stunning kitchen renovation by Amani Construction" class="w-full h-full object-cover block hero-image" loading="eager">
-      </picture>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
+      
+      <div class="container mx-auto px-4 sm:px-6 py-20 md:py-32 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <!-- Trust Badge -->
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <span class="text-sm font-semibold">4.9★ Rating • 127+ Happy Clients • Trusted Since 2010</span>
+          </div>
 
-      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/40"></div>
-      <div class="container mx-auto px-6 py-32 relative z-10 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Elegant Interiors. Durable Builds. <span class="text-blue-300">Trusted in Harare Since 2010.</span></h1>
-        <p class="text-lg md:text-xl font-light mb-8 max-w-3xl mx-auto">Upgrade your home with AmaniZW — from curtain rods to kitchens, we deliver quality, speed, and peace of mind. Get your free quote or chat instantly on WhatsApp.</p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="#quote" class="bg-gradient-to-br from-blue-700 to-blue-900 text-white font-semibold px-8 py-3 rounded-lg shadow-xl hover:scale-[1.03] transition-transform text-lg">Get a Free Quote</a>
-          <a href="https://wa.me/263778105259?text=Hello%20Amani%20Construction%2C%20I%20am%20looking%20for%20exceptional%20craftsmanship%20and%20would%20love%20a%20personalized%20quote%20for%20my%20project.%20Can%20you%20help%20me%20transform%20my%20space%3F" target="_blank" rel="noopener" class="bg-green-500 text-white font-semibold px-8 py-3 rounded-lg shadow-xl hover:bg-green-600 transition-transform text-lg flex items-center gap-2">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.19-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.24-1.44l-.38-.22-3.68.96.98-3.59-.25-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.4 0 4.68.84 6.5 2.36A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-1 2.44 0 1.44 1.03 2.84 1.18 3.04.15.2 2.03 3.1 5.02 4.23.7.24 1.25.38 1.68.48.71.16 1.36.14 1.87.08.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
-            WhatsApp Amani Construction
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
+            Transform Your Home with<br>
+            <span class="bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent">Zimbabwe's #1</span> Construction Experts
+          </h1>
+          
+          <p class="text-lg sm:text-xl md:text-2xl font-light text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Award-winning kitchen renovations, waterproofing, tiling & painting in Harare. Get your <strong class="font-bold text-white">FREE quote in 24 hours</strong> with our 5-year craftsmanship warranty.
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+            <a href="#quote" class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white text-primary font-bold px-8 py-4 rounded-xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all text-lg">
+              Get Your Free Quote
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </a>
+            <a href="https://wa.me/263778105259?text=Hello%20Amani%20Construction!%20I'm%20interested%20in%20a%20quote%20for%20my%20renovation%20project." target="_blank" rel="noopener" class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-green-500 text-white font-bold px-8 py-4 rounded-xl shadow-2xl hover:bg-green-600 hover:shadow-3xl hover:scale-105 transition-all text-lg">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.19-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.24-1.44l-.38-.22-3.68.96.98-3.59-.25-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.4 0 4.68.84 6.5 2.36A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-1 2.44 0 1.44 1.03 2.84 1.18 3.04.15.2 2.03 3.1 5.02 4.23.7.24 1.25.38 1.68.48.71.16 1.36.14 1.87.08.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
+              WhatsApp Us Now
+            </a>
+          </div>
+
+          <!-- Key Benefits -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div class="text-3xl font-bold text-white mb-1">24 Hours</div>
+              <div class="text-sm text-blue-100">Free Quote Response</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div class="text-3xl font-bold text-white mb-1">5 Years</div>
+              <div class="text-sm text-blue-100">Warranty Guarantee</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div class="text-3xl font-bold text-white mb-1">127+</div>
+              <div class="text-sm text-blue-100">5-Star Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg class="w-full h-12 md:h-20" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="white"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <span class="inline-block text-primary font-bold text-sm uppercase tracking-wider mb-3">Our Services</span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Expert Construction & Renovation Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive solutions for transforming every part of your property in Harare</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="/services/kitchen-renovations.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🍳</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Kitchen Renovations</h3>
+            <p class="text-gray-600 mb-4">Custom kitchens, modern fittings & premium countertops that add value to your home.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/waterproofing.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">💧</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Waterproofing</h3>
+            <p class="text-gray-600 mb-4">Permanent protection from leaks & water damage with industry-leading solutions.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/expert-tiling.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🔲</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Expert Tiling</h3>
+            <p class="text-gray-600 mb-4">Flawless floor & wall tiling, splashbacks, and patios with precision installation.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/professional-painting.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🎨</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Professional Painting</h3>
+            <p class="text-gray-600 mb-4">Interior & exterior painting with premium finishes that transform your space.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/paving-solutions.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🏗️</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Paving Solutions</h3>
+            <p class="text-gray-600 mb-4">Driveways, patios & walkways with lasting curb appeal and durability.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/interior-design.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🏠</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Interior Design</h3>
+            <p class="text-gray-600 mb-4">Modern, functional & beautiful spaces for homes and offices across Harare.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/blinds-and-curtain-rods.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🪟</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Blinds & Curtain Rods</h3>
+            <p class="text-gray-600 mb-4">Modern blinds & curtain rods, expertly measured and perfectly installed.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
+          </a>
+
+          <a href="/services/aluminum-products.html" class="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:border-primary transition-all">
+            <div class="text-5xl mb-4">🔧</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">Aluminum Products</h3>
+            <p class="text-gray-600 mb-4">Durable aluminum windows, doors & custom products for security and style.</p>
+            <span class="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+              Learn More 
+              <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+            </span>
           </a>
         </div>
       </div>
-      <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-44 h-44 rounded-full bg-white/5 blur-3xl"></div>
     </section>
 
-    <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/263778105259?text=Hello%20Amani%20Construction%2C%20I%20am%20looking%20for%20exceptional%20craftsmanship%20and%20would%20love%20a%20personalized%20quote%20for%20my%20project.%20Can%20you%20help%20me%20transform%20my%20space%3F" target="_blank" rel="noopener" id="floating-whatsapp" class="fixed right-6 bottom-24 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl p-4 flex items-center gap-2 transition-transform" aria-label="Chat on WhatsApp">
-      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.19-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.24-1.44l-.38-.22-3.68.96.98-3.59-.25-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.4 0 4.68.84 6.5 2.36A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-1 2.44 0 1.44 1.03 2.84 1.18 3.04.15.2 2.03 3.1 5.02 4.23.7.24 1.25.38 1.68.48.71.16 1.36.14 1.87.08.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
-      <span class="font-semibold hidden sm:inline">WhatsApp Us</span>
-    </a>
-
-    <!-- Floating CTA -->
-    <a href="#quote" id="floating-cta" class="fixed right-6 bottom-6 z-50 inline-flex items-center gap-3 bg-gradient-to-br from-blue-700 to-blue-900 text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform" aria-label="Get a free quote">
-      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12h14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="font-semibold">Free Quote</span>
-    </a>
-
-    <!-- Services -->
-    <section id="services" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-blue-900">Our Core Services</h2>
-          <p class="text-gray-600 mt-2">Comprehensive solutions for every part of your property.</p>
+    <!-- Why Choose Us -->
+    <section id="about" class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <span class="inline-block text-primary font-bold text-sm uppercase tracking-wider mb-3">Why Choose Amani</span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">The Amani Construction Difference</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">More than construction — we deliver peace of mind with every project</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="bg-gray-50 p-8 rounded-xl shadow-lg transition-shadow border border-gray-100 hover:shadow-2xl">
-            <h3 class="text-2xl font-semibold text-blue-800 mb-3">Interior Finishing</h3>
-            <p class="text-gray-600 mb-4">Painting, curtain rods & blinds, and elegant tiling — finishing touches that elevate your home.</p>
-            <a href="#quote" class="font-semibold text-blue-700 hover:underline">Learn More →</a>
-          </article>
-
-          <article class="bg-gray-50 p-8 rounded-xl shadow-lg transition-shadow border border-gray-100 hover:shadow-2xl">
-            <h3 class="text-2xl font-semibold text-blue-800 mb-3">Kitchens & Fittings</h3>
-            <p class="text-gray-600 mb-4">Complete kitchen renovations, modern fittings and premium countertops.</p>
-            <a href="#quote" class="font-semibold text-blue-700 hover:underline">Design Your Kitchen →</a>
-          </article>
-
-          <article class="bg-gray-50 p-8 rounded-xl shadow-lg transition-shadow border border-gray-100 hover:shadow-2xl">
-            <h3 class="text-2xl font-semibold text-blue-800 mb-3">Structural & Exterior</h3>
-            <p class="text-gray-600 mb-4">Waterproofing, paving, and durable doors & windows to protect your property.</p>
-            <a href="#quote" class="font-semibold text-blue-700 hover:underline">Secure Your Property →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About / Trust -->
-    <section id="about" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-blue-900">The Amani Difference</h2>
-          <p class="text-gray-600 mt-2">More than construction — we deliver peace of mind.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-blue-800">On-Time Guarantee</h4>
-            <p class="mt-2 text-gray-600">Projects planned meticulously and finished on schedule.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-2xl transition-all">
+            <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">5-Year Warranty</h3>
+            <p class="text-gray-600">All workmanship backed by our industry-leading 5-year warranty for your peace of mind.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-blue-800">Local Harare Experts</h4>
-            <p class="mt-2 text-gray-600">Proudly serving Harare since 2010 with local knowledge and trusted suppliers.</p>
+          <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-2xl transition-all">
+            <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">On-Time Guarantee</h3>
+            <p class="text-gray-600">Projects planned meticulously and finished on schedule, every single time.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-blue-800">Transparent Pricing</h4>
-            <p class="mt-2 text-gray-600">Detailed, fair quotes upfront — no surprises.</p>
+          <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-2xl transition-all">
+            <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Local Harare Experts</h3>
+            <p class="text-gray-600">Proudly serving Harare since 2010 with local knowledge and trusted suppliers.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h4 class="text-xl font-semibold text-blue-800">5-Year Warranty</h4>
-            <p class="mt-2 text-gray-600">We stand behind our workmanship for your peace of mind.</p>
+          <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-2xl transition-all">
+            <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Pricing</h3>
+            <p class="text-gray-600">Detailed, fair quotes upfront with no hidden costs or surprise charges.</p>
           </div>
         </div>
       </div>
@@ -215,281 +343,486 @@
 
     <!-- Portfolio -->
     <section id="work" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-blue-900">Our Work</h2>
-          <p class="text-gray-600 mt-2">See the quality and craftsmanship we bring to every project.</p>
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <span class="inline-block text-primary font-bold text-sm uppercase tracking-wider mb-3">Portfolio</span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Our Recent Projects</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">See the quality and craftsmanship we bring to every home in Harare</p>
         </div>
 
-        <div class="flex justify-center flex-wrap gap-2 mb-10">
-          <button class="filter-btn filter-btn-active px-5 py-2 rounded-full font-medium text-sm" data-filter="all">All</button>
-          <button class="filter-btn px-5 py-2 rounded-full font-medium text-sm" data-filter="kitchens">Kitchens</button>
-          <button class="filter-btn px-5 py-2 rounded-full font-medium text-sm" data-filter="tiling">Tiling & Paving</button>
-          <button class="filter-btn px-5 py-2 rounded-full font-medium text-sm" data-filter="waterproofing">Waterproofing</button>
-          <button class="filter-btn px-5 py-2 rounded-full font-medium text-sm" data-filter="interiors">Interiors</button>
+        <div class="flex justify-center flex-wrap gap-3 mb-12">
+          <button class="filter-btn filter-btn-active px-6 py-3 rounded-full font-semibold text-sm transition-all" data-filter="all">All Projects</button>
+          <button class="filter-btn px-6 py-3 rounded-full font-semibold text-sm transition-all" data-filter="kitchens">Kitchens</button>
+          <button class="filter-btn px-6 py-3 rounded-full font-semibold text-sm transition-all" data-filter="tiling">Tiling</button>
+          <button class="filter-btn px-6 py-3 rounded-full font-semibold text-sm transition-all" data-filter="waterproofing">Waterproofing</button>
+          <button class="filter-btn px-6 py-3 rounded-full font-semibold text-sm transition-all" data-filter="interiors">Interiors</button>
         </div>
 
-        <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <figure class="portfolio-item group" data-category="kitchens">
-            <img src="https://placehold.co/900x600/1e3a8a/FFFFFF?text=Modern+Kitchen" alt="Modern Kitchen Renovation" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Modern Kitchen Makeover</h3>
-              <p class="text-gray-600 text-sm">Before: Outdated cabinetry, poor lighting.<br>After: Custom cabinets, LED lighting, quartz countertops.<br><span class="text-green-700 font-medium">Client: “It feels like a brand new home!”</span></p>
-            </figcaption>
-          </figure>
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="portfolio-item group" data-category="kitchens">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800&h=600&fit=crop" alt="Modern Kitchen Renovation" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Modern Kitchen Makeover</h3>
+                  <p class="text-sm text-blue-200">Borrowdale • Complete Renovation</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Modern Kitchen Makeover</h3>
+              <p class="text-gray-600 text-sm mb-2">Custom cabinets, LED lighting, quartz countertops. Budget: $8,500</p>
+              <p class="text-green-700 font-medium italic text-sm">"It feels like a brand new home!" — Sarah M.</p>
+            </div>
+          </article>
 
-          <figure class="portfolio-item group" data-category="tiling">
-            <img src="https://placehold.co/900x600/3b82f6/FFFFFF?text=Patio+Paving" alt="Patio Paving" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Patio Paving</h3>
-              <p class="text-gray-600 text-sm">Before: Uneven, cracked surface.<br>After: Durable, slip-resistant paving.<br><span class="text-green-700 font-medium">Client: “Our outdoor space is now perfect for entertaining.”</span></p>
-            </figcaption>
-          </figure>
+          <article class="portfolio-item group" data-category="tiling">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&h=600&fit=crop" alt="Luxury Bathroom Tiling" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Luxury Bathroom Tiling</h3>
+                  <p class="text-sm text-blue-200">Glen Lorne • Premium Finishes</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Luxury Bathroom Tiling</h3>
+              <p class="text-gray-600 text-sm mb-2">Porcelain tiles, heated floors, custom patterns. Budget: $4,200</p>
+              <p class="text-green-700 font-medium italic text-sm">"The bathroom looks like a 5-star hotel!" — David C.</p>
+            </div>
+          </article>
 
-          <figure class="portfolio-item group" data-category="interiors">
-            <img src="https://placehold.co/900x600/60a5fa/FFFFFF?text=Living+Room" alt="Living Room Interior" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Living Room Interior</h3>
-              <p class="text-gray-600 text-sm">Before: Dull colors, poor layout.<br>After: Open-plan, new paint, custom blinds.<br><span class="text-green-700 font-medium">Client: “The space finally feels inviting.”</span></p>
-            </figcaption>
-          </figure>
+          <article class="portfolio-item group" data-category="waterproofing">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1581858726788-75bc0f1a4de3?w=800&h=600&fit=crop" alt="Roof Waterproofing" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Complete Roof Waterproofing</h3>
+                  <p class="text-sm text-blue-200">Avondale • Leak Prevention</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Complete Roof Waterproofing</h3>
+              <p class="text-gray-600 text-sm mb-2">Permanent solution, 5-year warranty. Budget: $3,800</p>
+              <p class="text-green-700 font-medium italic text-sm">"No more leaks, even in heavy rain!" — Thandiwe N.</p>
+            </div>
+          </article>
 
-          <figure class="portfolio-item group" data-category="waterproofing">
-            <img src="https://placehold.co/900x600/93c5fd/FFFFFF?text=Roof+Waterproofing" alt="Roof Waterproofing" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Roof Waterproofing</h3>
-              <p class="text-gray-600 text-sm">Before: Persistent leaks.<br>After: Permanent waterproofing, 5-year warranty.<br><span class="text-green-700 font-medium">Client: “No more leaks, even in heavy rain!”</span></p>
-            </figcaption>
-          </figure>
+          <article class="portfolio-item group" data-category="interiors">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop" alt="Living Room Interior" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Living Room Transformation</h3>
+                  <p class="text-sm text-blue-200">Chisipite • Full Interior Redesign</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Living Room Transformation</h3>
+              <p class="text-gray-600 text-sm mb-2">Open-plan design, new paint, custom blinds. Budget: $5,600</p>
+              <p class="text-green-700 font-medium italic text-sm">"The space finally feels inviting!" — Tawanda P.</p>
+            </div>
+          </article>
 
-          <figure class="portfolio-item group" data-category="kitchens">
-            <img src="https://placehold.co/900x600/1e3a8a/FFFFFF?text=Cabinet+Fittings" alt="Cabinet Fittings" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Custom Cabinet Fittings</h3>
-              <p class="text-gray-600 text-sm">Before: Wasted storage space.<br>After: Bespoke cabinetry, soft-close drawers.<br><span class="text-green-700 font-medium">Client: “So much more organized!”</span></p>
-            </figcaption>
-          </figure>
+          <article class="portfolio-item group" data-category="tiling">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=600&fit=crop" alt="Patio Paving" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Outdoor Patio Paving</h3>
+                  <p class="text-sm text-blue-200">Highlands • Entertainment Area</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Outdoor Patio Paving</h3>
+              <p class="text-gray-600 text-sm mb-2">Slip-resistant paving, drainage system. Budget: $6,200</p>
+              <p class="text-green-700 font-medium italic text-sm">"Perfect for entertaining guests!" — Blessing K.</p>
+            </div>
+          </article>
 
-          <figure class="portfolio-item group" data-category="tiling">
-            <img src="https://placehold.co/900x600/3b82f6/FFFFFF?text=Bathroom+Tiling" alt="Bathroom Tiling" loading="lazy" width="900" height="600" class="rounded-lg shadow-lg w-full h-64 object-cover">
-            <figcaption class="mt-4 text-left">
-              <h3 class="font-semibold text-blue-800">Bathroom Tiling</h3>
-              <p class="text-gray-600 text-sm">Before: Old, stained tiles.<br>After: Modern, easy-to-clean surfaces.<br><span class="text-green-700 font-medium">Client: “The bathroom looks like a hotel!”</span></p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust Signals -->
-    <section class="py-12 bg-gradient-to-r from-blue-50 to-blue-100">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-          <div class="flex flex-col items-center text-center">
-            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-800 mb-3">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-            <span class="font-bold text-lg text-blue-900">5-Year Warranty</span>
-            <span class="text-gray-600 text-sm">On all workmanship</span>
-          </div>
-          <div class="flex flex-col items-center text-center">
-            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-800 mb-3">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10"/></svg>
-            </span>
-            <span class="font-bold text-lg text-blue-900">On-Time Guarantee</span>
-            <span class="text-gray-600 text-sm">Projects finished as promised</span>
-          </div>
-          <div class="flex flex-col items-center text-center">
-            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-800 mb-3">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 6v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-            <span class="font-bold text-lg text-blue-900">Trusted Since 2010</span>
-            <span class="text-gray-600 text-sm">Local, family-owned business</span>
-          </div>
+          <article class="portfolio-item group" data-category="kitchens">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+              <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&h=600&fit=crop" alt="Cabinet Fittings" loading="lazy" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 class="text-2xl font-bold mb-2">Custom Cabinet Installation</h3>
+                  <p class="text-sm text-blue-200">Greendale • Storage Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-bold text-lg text-gray-900 mb-2">Custom Cabinet Installation</h3>
+              <p class="text-gray-600 text-sm mb-2">Bespoke cabinetry, soft-close drawers. Budget: $7,100</p>
+              <p class="text-green-700 font-medium italic text-sm">"So much more organized now!" — Ruth M.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-20 bg-blue-900 text-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold">What Our Clients in Harare Say</h2>
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-primary to-blue-900 text-white">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <span class="inline-block text-blue-200 font-bold text-sm uppercase tracking-wider mb-3">Testimonials</span>
+          <h2 class="text-4xl md:text-5xl font-black mb-4">What Our Clients Say</h2>
+          <div class="flex items-center justify-center gap-2 text-yellow-400">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <span class="ml-2 text-xl font-bold">4.9/5</span>
+            <span class="text-blue-200">from 127+ reviews</span>
+          </div>
         </div>
-        <div class="relative max-w-3xl mx-auto">
-          <div class="testimonial-item text-center" style="display: block;">
-            <div class="flex flex-col items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah M." class="w-16 h-16 rounded-full border-4 border-blue-200 mb-2 shadow-lg">
-              <span class="font-bold">Sarah M., Glen Lorne</span>
+
+        <div class="relative max-w-5xl mx-auto">
+          <div class="testimonial-slider">
+            <div class="testimonial-item bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20" style="display: block;">
+              <div class="flex items-start gap-6 mb-6">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah M." class="w-16 h-16 rounded-full border-4 border-white/30 shadow-lg flex-shrink-0">
+                <div>
+                  <div class="font-bold text-xl mb-1">Sarah M.</div>
+                  <div class="text-blue-200 text-sm mb-2">Glen Lorne • Kitchen Renovation</div>
+                  <div class="flex gap-1 text-yellow-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                </div>
+              </div>
+              <p class="text-xl md:text-2xl italic leading-relaxed">"Amani Construction transformed our outdated kitchen into a modern masterpiece. The team was professional, on time, and the quality is outstanding. We couldn't be happier with the results!"</p>
             </div>
-            <p class="text-xl italic mb-2">“Amani Construction transformed our outdated kitchen into a modern masterpiece. The team was professional, on time, and the quality is outstanding.”</p>
-            <span class="inline-block text-yellow-400 text-lg mb-2">★★★★★</span>
-          </div>
-          <div class="testimonial-item text-center" style="display: none;">
-            <div class="flex flex-col items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David C." class="w-16 h-16 rounded-full border-4 border-blue-200 mb-2 shadow-lg">
-              <span class="font-bold">David C., Borrowdale</span>
+
+            <div class="testimonial-item bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20" style="display: none;">
+              <div class="flex items-start gap-6 mb-6">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David C." class="w-16 h-16 rounded-full border-4 border-white/30 shadow-lg flex-shrink-0">
+                <div>
+                  <div class="font-bold text-xl mb-1">David C.</div>
+                  <div class="text-blue-200 text-sm mb-2">Borrowdale • Waterproofing</div>
+                  <div class="flex gap-1 text-yellow-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                </div>
+              </div>
+              <p class="text-xl md:text-2xl italic leading-relaxed">"We had a persistent leak that other contractors couldn't fix. Amani identified the source immediately and solved it permanently. No more leaks, even during the heavy rains!"</p>
             </div>
-            <p class="text-xl italic mb-2">“We had a leak others couldn't fix. Amani identified the source and solved it permanently.”</p>
-            <span class="inline-block text-yellow-400 text-lg mb-2">★★★★★</span>
-          </div>
-          <div class="testimonial-item text-center" style="display: none;">
-            <div class="flex flex-col items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Thandiwe N." class="w-16 h-16 rounded-full border-4 border-blue-200 mb-2 shadow-lg">
-              <span class="font-bold">Thandiwe N., Chisipite</span>
+
+            <div class="testimonial-item bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20" style="display: none;">
+              <div class="flex items-start gap-6 mb-6">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Thandiwe N." class="w-16 h-16 rounded-full border-4 border-white/30 shadow-lg flex-shrink-0">
+                <div>
+                  <div class="font-bold text-xl mb-1">Thandiwe N.</div>
+                  <div class="text-blue-200 text-sm mb-2">Chisipite • Paving Project</div>
+                  <div class="flex gap-1 text-yellow-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                </div>
+              </div>
+              <p class="text-xl md:text-2xl italic leading-relaxed">"The paving on our driveway is fantastic. Their attention to detail has truly lifted the appearance of our entire property. Highly recommend Amani Construction!"</p>
             </div>
-            <p class="text-xl italic mb-2">“The paving on our driveway is fantastic. Attention to detail has lifted our property.”</p>
-            <span class="inline-block text-yellow-400 text-lg mb-2">★★★★★</span>
           </div>
-          <div class="testimonial-item text-center" style="display: none;">
-            <div class="flex flex-col items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Tawanda P." class="w-16 h-16 rounded-full border-4 border-blue-200 mb-2 shadow-lg">
-              <span class="font-bold">Tawanda P., Avondale</span>
-            </div>
-            <p class="text-xl italic mb-2">“From start to finish, the Amani team was communicative and reliable. Our new bathroom is stunning!”</p>
-            <span class="inline-block text-yellow-400 text-lg mb-2">★★★★★</span>
-          </div>
-          <div class="testimonial-item text-center" style="display: none;">
-            <div class="flex flex-col items-center mb-4">
-              <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Blessing K." class="w-16 h-16 rounded-full border-4 border-blue-200 mb-2 shadow-lg">
-              <span class="font-bold">Blessing K., Highlands</span>
-            </div>
-            <p class="text-xl italic mb-2">“Excellent service, fair pricing, and the work was completed ahead of schedule. Highly recommend!”</p>
-            <span class="inline-block text-yellow-400 text-lg mb-2">★★★★★</span>
-          </div>
-          <button id="prev-testimonial" class="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/20 hover:bg-white/40" aria-label="Previous">&lt;</button>
-          <button id="next-testimonial" class="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/20 hover:bg-white/40" aria-label="Next">&gt;</button>
+
+          <button id="prev-testimonial" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 md:p-4 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all" aria-label="Previous testimonial">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
+          <button id="next-testimonial" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 md:p-4 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all" aria-label="Next testimonial">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- Quote / Contact (Netlify Form) -->
-    <!-- Lead Magnet: Free Guide Download -->
-    <section id="free-guide" class="py-20 bg-gradient-to-br from-blue-100 to-blue-50">
-      <div class="container mx-auto px-6 text-center">
-        <div class="max-w-2xl mx-auto mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Get Our Free Home Renovation Guide</h2>
-          <p class="text-gray-700 mb-6">Discover expert tips to save money, avoid common mistakes, and get the best results for your next project. Enter your email to receive your free PDF instantly.</p>
-        </div>
-        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl border border-gray-100">
-          <form name="guide-download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html#guide" class="space-y-4">
-            <input type="hidden" name="form-name" value="guide-download">
-            <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
-            <div>
-              <label for="guide-email" class="block text-left text-sm font-medium text-gray-700">Email Address</label>
-              <input type="email" name="email" id="guide-email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+    <!-- Lead Magnet -->
+    <section id="free-guide" class="py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <div class="grid md:grid-cols-2">
+            <div class="bg-gradient-to-br from-primary to-blue-800 p-8 md:p-12 text-white flex flex-col justify-center">
+              <div class="text-5xl mb-4">📚</div>
+              <h3 class="text-3xl md:text-4xl font-black mb-4">Free Home Renovation Guide</h3>
+              <p class="text-lg text-blue-100 mb-6">Expert tips to save money, avoid costly mistakes, and get the best results for your next project in Harare.</p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Budget planning checklist</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Material selection guide</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Common mistakes to avoid</span>
+                </li>
+              </ul>
             </div>
-            <div>
-              <button type="submit" class="w-full bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get My Free Guide</button>
+            <div class="p-8 md:p-12 bg-gray-50">
+              <form name="guide-download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html#guide" class="space-y-5">
+                <input type="hidden" name="form-name" value="guide-download">
+                <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+                
+                <div>
+                  <label for="guide-name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                  <input type="text" name="name" id="guide-name" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                </div>
+
+                <div>
+                  <label for="guide-email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                  <input type="email" name="email" id="guide-email" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                </div>
+
+                <div>
+                  <label for="guide-phone" class="block text-sm font-semibold text-gray-900 mb-2">Phone (Optional)</label>
+                  <input type="tel" name="phone" id="guide-phone" class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:bg-blue-900 hover:shadow-xl transition-all">
+                  Download Free Guide Now
+                </button>
+
+                <p class="text-xs text-gray-500 text-center">We respect your privacy. No spam, ever.</p>
+              </form>
             </div>
-            <p class="text-xs text-gray-500">We respect your privacy. No spam, ever.</p>
-          </form>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact / Quote Form -->
     <section id="quote" class="py-20 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-blue-900">Ready to Start Your Project?</h2>
-        <p class="text-gray-600 mt-2 mb-8 max-w-2xl mx-auto">Initial consultations and quotes are free with no obligation.</p>
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="inline-block text-primary font-bold text-sm uppercase tracking-wider mb-3">Get Started</span>
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Get Your Free Quote Today</h2>
+            <p class="text-xl text-gray-600">We'll respond within 24 hours with a detailed, transparent estimate</p>
+          </div>
 
-        <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-xl border border-gray-100">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-4">
-            <input type="hidden" name="form-name" value="contact">
-            <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-3">
+              <div class="bg-gradient-to-br from-gray-50 to-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-6">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label for="name" class="block text-left text-sm font-medium text-gray-700">Full Name</label>
-                <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name *</label>
+                      <input type="text" name="name" id="name" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                    </div>
+
+                    <div>
+                      <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">Phone Number *</label>
+                      <input type="tel" name="phone" id="phone" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address *</label>
+                    <input type="email" name="email" id="email" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                  </div>
+
+                  <div>
+                    <label for="service" class="block text-sm font-semibold text-gray-900 mb-2">Service Needed *</label>
+                    <select id="service" name="service" required class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors">
+                      <option value="">Select a service...</option>
+                      <option>Kitchen Renovation</option>
+                      <option>Waterproofing</option>
+                      <option>Tiling & Paving</option>
+                      <option>Painting (Interior/Exterior)</option>
+                      <option>Interior Design</option>
+                      <option>Blinds & Curtain Rods</option>
+                      <option>Aluminum Products</option>
+                      <option>Multiple Services</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Project Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, budget range, timeline, etc." class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition-colors"></textarea>
+                  </div>
+
+                  <button type="submit" class="w-full bg-gradient-to-r from-primary to-blue-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl hover:from-blue-900 hover:to-blue-800 transition-all text-lg">
+                    Get My Free Quote Now →
+                  </button>
+
+                  <p class="text-sm text-gray-500 text-center">⚡ Response within 24 hours • 💯 No obligation • 🔒 Your info is safe</p>
+                </form>
+              </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-6">
+              <div class="bg-gradient-to-br from-primary to-blue-800 p-8 rounded-2xl text-white">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-4">
+                  <a href="tel:+263778105259" class="flex items-start gap-4 hover:bg-white/10 p-3 rounded-lg transition-colors group">
+                    <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <div>
+                      <div class="font-semibold mb-1">Phone</div>
+                      <div class="text-blue-100 group-hover:text-white">+263 77 810 5259</div>
+                    </div>
+                  </a>
+
+                  <a href="mailto:build@amanizw.com" class="flex items-start gap-4 hover:bg-white/10 p-3 rounded-lg transition-colors group">
+                    <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <div>
+                      <div class="font-semibold mb-1">Email</div>
+                      <div class="text-blue-100 group-hover:text-white">build@amanizw.com</div>
+                    </div>
+                  </a>
+
+                  <div class="flex items-start gap-4 p-3">
+                    <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <div>
+                      <div class="font-semibold mb-1">Office</div>
+                      <div class="text-blue-100">49 Electra House,<br>Samora Machel, Harare</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4 p-3">
+                    <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                      <div class="font-semibold mb-1">Hours</div>
+                      <div class="text-blue-100">Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <label for="phone" class="block text-left text-sm font-medium text-gray-700">Phone Number</label>
-                <input type="tel" name="phone" id="phone" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-              </div>
+              <a href="https://wa.me/263778105259?text=Hello%20Amani%20Construction!%20I'm%20interested%20in%20a%20quote%20for%20my%20renovation%20project." target="_blank" rel="noopener" class="block bg-green-500 hover:bg-green-600 text-white p-6 rounded-2xl shadow-lg transition-all group">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-lg font-bold mb-1">Quick WhatsApp Quote</div>
+                    <div class="text-green-100 text-sm">Get instant response</div>
+                  </div>
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.19-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.24-1.44l-.38-.22-3.68.96.98-3.59-.25-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.4 0 4.68.84 6.5 2.36A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-1 2.44 0 1.44 1.03 2.84 1.18 3.04.15.2 2.03 3.1 5.02 4.23.7.24 1.25.38 1.68.48.71.16 1.36.14 1.87.08.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
+                </div>
+              </a>
             </div>
-
-            <div>
-              <label for="email" class="block text-left text-sm font-medium text-gray-700">Email Address</label>
-              <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-            </div>
-
-            <div>
-              <label for="service" class="block text-left text-sm font-medium text-gray-700">Service of Interest</label>
-              <select id="service" name="service" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
-                <option>Kitchen Fittings & Renovation</option>
-                <option>Waterproofing</option>
-                <option>Tiling & Paving</option>
-                <option>Painting</option>
-                <option>Interior Design</option>
-                <option>Curtain Rods & Blinds</option>
-                <option>Aluminum Products</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="message" class="block text-left text-sm font-medium text-gray-700">Brief Message (Optional)</label>
-              <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-            </div>
-
-            <div>
-              <button type="submit" class="w-full bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get My Free Quote Now</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer id="contact" class="bg-blue-900 text-white">
-    <div class="container mx-auto px-6 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+  <footer id="contact" class="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div class="container mx-auto px-4 sm:px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <div>
-          <h3 class="text-xl font-bold mb-3">Amani Construction</h3>
-          <p class="text-blue-200">Quality Craftsmanship in Harare, Zimbabwe. Since 2010.</p>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="/assets/amani-logo.svg" alt="Amani Construction" width="42" height="42" class="rounded-lg">
+            <div>
+              <div class="text-xl font-bold">Amani Construction</div>
+              <div class="text-sm text-gray-400">Since 2010</div>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-4">Zimbabwe's leading construction and renovation specialists. Quality craftsmanship with a 5-year warranty.</p>
+          <div class="flex items-center gap-2 text-yellow-400">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <span class="font-bold">4.9/5</span>
+            <span class="text-gray-400">from 127+ reviews</span>
+          </div>
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
-          <ul>
-            <li class="mb-2"><a href="#services" class="text-blue-200 hover:underline">Services</a></li>
-            <li class="mb-2"><a href="#work" class="text-blue-200 hover:underline">Our Work</a></li>
-            <li class="mb-2"><a href="#about" class="text-blue-200 hover:underline">About Us</a></li>
+          <h4 class="text-lg font-bold mb-6">Our Services</h4>
+          <ul class="space-y-3">
+            <li><a href="/services/kitchen-renovations.html" class="text-gray-300 hover:text-white transition-colors">Kitchen Renovations</a></li>
+            <li><a href="/services/waterproofing.html" class="text-gray-300 hover:text-white transition-colors">Waterproofing</a></li>
+            <li><a href="/services/expert-tiling.html" class="text-gray-300 hover:text-white transition-colors">Expert Tiling</a></li>
+            <li><a href="/services/professional-painting.html" class="text-gray-300 hover:text-white transition-colors">Professional Painting</a></li>
+            <li><a href="/services/paving-solutions.html" class="text-gray-300 hover:text-white transition-colors">Paving Solutions</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-3">Contact Us</h4>
-          <ul>
-            <li class="mb-2"><a href="mailto:build@amanizw.com" class="text-blue-200 hover:underline">build@amanizw.com</a></li>
-            <li class="mb-2"><a href="tel:+263778105259" class="text-blue-200 hover:underline">+263 77 810 5259</a></li>
-            <li class="mb-2 text-blue-200">49 Electra House, Samora Machel, Harare</li>
+          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">All Services</a></li>
+            <li><a href="#work" class="text-gray-300 hover:text-white transition-colors">Our Portfolio</a></li>
+            <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">Why Choose Us</a></li>
+            <li><a href="#testimonials" class="text-gray-300 hover:text-white transition-colors">Client Reviews</a></li>
+            <li><a href="#quote" class="text-gray-300 hover:text-white transition-colors">Get Free Quote</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-3">Connect</h4>
-          <p class="text-blue-200">Follow us on social media for our latest projects and updates.</p>
+          <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+          <ul class="space-y-4">
+            <li>
+              <a href="tel:+263778105259" class="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                +263 77 810 5259
+              </a>
+            </li>
+            <li>
+              <a href="mailto:build@amanizw.com" class="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                build@amanizw.com
+              </a>
+            </li>
+            <li class="text-gray-300 flex items-start gap-3">
+              <svg class="w-5 h-5 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>49 Electra House,<br>Samora Machel, Harare</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="mt-8 pt-8 border-t border-blue-800 text-center text-blue-300 text-sm">
-        <p>© 2024 Amani Construction. All Rights Reserved.</p>
-        <div class="mt-8 flex flex-col items-center">
-          <h4 class="text-lg font-semibold mb-2 text-blue-200">Find Us</h4>
-          <div class="w-full max-w-md rounded-lg overflow-hidden shadow-lg border border-blue-800">
-            <iframe title="Amani Construction Harare Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9999999999995!2d31.045!3d-17.829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a5a5a5a5a5a5%3A0x1234567890abcdef!2s49%20Electra%20House%2C%20Samora%20Machel%2C%20Harare!5e0!3m2!1sen!2szw!4v1660000000000!5m2!1sen!2szw" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+      <div class="border-t border-gray-700 pt-8">
+        <div class="text-center text-gray-400 text-sm">
+          <p class="mb-4">© 2024 Amani Construction. All Rights Reserved.</p>
+          <p class="flex flex-wrap items-center justify-center gap-4">
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              5-Year Warranty
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              On-Time Guarantee
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              Local Experts Since 2010
+            </span>
+          </p>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/263778105259?text=Hello%20Amani%20Construction!%20I'm%20interested%20in%20a%20quote%20for%20my%20renovation%20project." target="_blank" rel="noopener" id="floating-whatsapp" class="fixed right-6 bottom-24 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl p-4 transition-all hover:scale-110 animate-bounce" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.98L0 24l6.19-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.24-1.44l-.38-.22-3.68.96.98-3.59-.25-.37A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.4 0 4.68.84 6.5 2.36A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.27-1 1-1 2.44 0 1.44 1.03 2.84 1.18 3.04.15.2 2.03 3.1 5.02 4.23.7.24 1.25.38 1.68.48.71.16 1.36.14 1.87.08.57-.07 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
+  </a>
+
+  <!-- Floating CTA -->
+  <a href="#quote" id="floating-cta" class="fixed right-6 bottom-6 z-50 inline-flex items-center gap-3 bg-gradient-to-r from-primary to-blue-700 text-white px-6 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold" aria-label="Get a free quote">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+    Free Quote
+  </a>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Mobile Menu Toggle (accessible)
+      // Mobile Menu Toggle
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
 
@@ -506,17 +839,19 @@
 
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-          filterButtons.forEach(btn => btn.classList.remove('filter-btn-active','bg-blue-800','text-white'));
-          filterButtons.forEach(btn => btn.classList.add('text-gray-700','bg-gray-200'));
-          button.classList.add('filter-btn-active','bg-blue-800','text-white');
-          button.classList.remove('text-gray-700','bg-gray-200');
+          filterButtons.forEach(btn => {
+            btn.classList.remove('filter-btn-active', 'bg-primary', 'text-white');
+            btn.classList.add('text-gray-700', 'bg-gray-100');
+          });
+          button.classList.add('filter-btn-active', 'bg-primary', 'text-white');
+          button.classList.remove('text-gray-700', 'bg-gray-100');
 
           const filter = button.dataset.filter;
           portfolioItems.forEach(item => {
             if (filter === 'all' || item.dataset.category === filter) {
-              requestAnimationFrame(() => item.classList.remove('hidden'));
+              item.classList.remove('hidden');
             } else {
-              requestAnimationFrame(() => item.classList.add('hidden'));
+              item.classList.add('hidden');
             }
           });
         });
@@ -529,27 +864,51 @@
       let currentTestimonial = 0;
 
       function showTestimonial(index) {
-        testimonials.forEach((t,i) => t.style.display = i === index ? 'block' : 'none');
+        testimonials.forEach((t, i) => t.style.display = i === index ? 'block' : 'none');
       }
 
       prevButton.addEventListener('click', () => {
         currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
         showTestimonial(currentTestimonial);
       });
+
       nextButton.addEventListener('click', () => {
         currentTestimonial = (currentTestimonial + 1) % testimonials.length;
         showTestimonial(currentTestimonial);
       });
 
-      // Small header shrink effect on scroll
+      // Auto-rotate testimonials every 5 seconds
+      setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+      }, 5000);
+
+      // Header scroll effect
       const header = document.getElementById('site-header');
       let lastScroll = 0;
       window.addEventListener('scroll', () => {
-        const sc = window.scrollY || document.documentElement.scrollTop;
-        if (sc > 50) header.classList.add('shadow-lg'); else header.classList.remove('shadow-lg');
-        lastScroll = sc;
+        const currentScroll = window.scrollY;
+        if (currentScroll > 100) {
+          header.classList.add('shadow-lg');
+        } else {
+          header.classList.remove('shadow-lg');
+        }
+        lastScroll = currentScroll;
       });
 
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
     });
   </script>
 </body>
