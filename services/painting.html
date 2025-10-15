@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painting | AmaniZW</title>
+  <title>Painting | Amani Construction</title>
+  <!-- WhatsApp CTA update -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var waLinks = document.querySelectorAll('a[href*="wa.me/263778105259"]');
+      waLinks.forEach(function(link) {
+        link.href = 'https://wa.me/263778105259?text=Hello%20Amani%20Construction%2C%20I%20am%20looking%20for%20exceptional%20craftsmanship%20and%20would%20love%20a%20personalized%20quote%20for%20my%20project.%20Can%20you%20help%20me%20transform%20my%20space%3F';
+        link.innerHTML = link.innerHTML.replace(/AmaniZW|WhatsApp Us Now|WhatsApp Us/gi, 'WhatsApp Amani Construction');
+      });
+    });
+  </script>
   <meta name="description" content="Professional painting services in Harare. Interior and exterior painting for homes and businesses with quality finishes.">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
