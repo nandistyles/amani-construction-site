@@ -143,34 +143,29 @@ body{
 /* Scroll-triggered animations */
 .animate-on-scroll {
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.animate-on-scroll.animated {
-  opacity: 1;
-}
-
-.fade-up {
+.animate-on-scroll.animated.fade-up {
   animation: fadeInUp 0.8s ease forwards;
 }
 
-.fade-down {
+.animate-on-scroll.animated.fade-down {
   animation: fadeInDown 0.8s ease forwards;
 }
 
-.fade-in {
+.animate-on-scroll.animated.fade-in {
   animation: fadeIn 0.8s ease forwards;
 }
 
-.scale-in {
+.animate-on-scroll.animated.scale-in {
   animation: scaleIn 0.8s ease forwards;
 }
 
-.slide-left {
+.animate-on-scroll.animated.slide-left {
   animation: slideInLeft 0.8s ease forwards;
 }
 
-.slide-right {
+.animate-on-scroll.animated.slide-right {
   animation: slideInRight 0.8s ease forwards;
 }
 
