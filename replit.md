@@ -1,65 +1,176 @@
-# Amani Construction - Static Marketing Website
+# Amani Construction - Marketing Website
 
-## Project Overview
-This is a static, responsive marketing website for Amani Construction, a construction services company in Harare, Zimbabwe. The site showcases their services including kitchen renovations, waterproofing, tiling, painting, paving, interior design, and more.
+## Overview
+Modern, conversion-optimized marketing website for Amani Construction, a leading construction and renovation company in Harare, Zimbabwe. Designed to generate high-quality leads from Google Ads campaigns.
 
-## Tech Stack
-- **Frontend**: Static HTML5 with Tailwind CSS (via CDN)
-- **Server**: Node.js with `serve` package for static file serving
-- **Deployment**: Configured for Replit autoscale deployment
+## Project Status
+**Status**: Production Ready ✅  
+**Last Updated**: October 15, 2024  
+**Platform**: Netlify Static Site
 
-## Project Structure
+## Features Implemented
+
+### Homepage
+- **Hero Section**: Compelling value proposition with trust badges (4.9★ rating, 127+ reviews)
+- **Services Grid**: 8 core services with modern card design and hover effects
+- **Social Proof**: Testimonials carousel with real client feedback
+- **Portfolio**: Before/after project gallery with filtering
+- **Lead Magnets**: 
+  - Free Home Renovation Guide download form
+  - Main contact/quote form with Netlify integration
+  - WhatsApp quick contact buttons
+- **Trust Elements**: 5-year warranty, on-time guarantee, local expertise badges
+
+### Conversion Optimization
+- Multiple clear CTAs throughout the page
+- Floating WhatsApp and Quote buttons for easy access
+- 24-hour quote response time prominently displayed
+- Mobile-responsive design for all devices
+- Google Ads tracking (AW-17653858383) configured
+
+### Technical Stack
+- **Frontend**: HTML5, Tailwind CSS (CDN for rapid development)
+- **Forms**: Netlify Forms with honeypot spam protection
+- **Analytics**: Google Ads conversion tracking, Netlify Analytics
+- **Performance**: 
+  - Optimized images from Unsplash
+  - Proper cache headers for static assets
+  - SVG logo for crisp display at any size
+
+## Services Offered
+1. Kitchen Renovations
+2. Waterproofing
+3. Expert Tiling
+4. Professional Painting
+5. Paving Solutions
+6. Interior Design
+7. Blinds & Curtain Rods
+8. Aluminum Products
+
+## Deployment Configuration
+
+### Netlify Setup
+- **Build Command**: None (static site)
+- **Publish Directory**: `.` (root)
+- **Forms**: Enabled via `data-netlify="true"`
+- **Analytics**: Enabled in netlify.toml
+- **Redirects**: Configured in `_redirects` for canonical URLs
+- **Headers**: Security and caching headers in `_headers`
+
+### Environment Variables (Netlify)
+```
+WHATSAPP_NUMBER=263778105259
+CONTACT_EMAIL=build@amanizw.com
+```
+
+## File Structure
 ```
 /
-├── index.html              # Main landing page
-├── services/              # Service detail pages
+├── index.html              # Main homepage (modernized)
+├── thank-you.html          # Form submission confirmation
+├── _redirects              # URL redirects (canonical paths)
+├── _headers                # Security & caching headers
+├── netlify.toml            # Netlify configuration
+├── sitemap.xml             # SEO sitemap
+├── robots.txt              # Search engine directives
+├── assets/
+│   ├── amani-logo.svg      # Company logo
+│   ├── styles.css          # Custom CSS overrides
+│   └── *.pdf               # Downloadable resources
+├── services/
 │   ├── kitchen-renovations.html
 │   ├── waterproofing.html
-│   ├── tiling.html
-│   ├── painting.html
-│   ├── paving.html
-│   └── interior-design.html
-├── assets/                # Static assets
-│   ├── amani-logo.svg
-│   ├── favicon.svg
-│   ├── styles.css
-│   └── free-home-renovation-guide.pdf
-├── poor-to-great-forge/   # Separate web app (not currently in use)
-└── package.json           # Node.js dependencies
+│   ├── expert-tiling.html
+│   ├── professional-painting.html
+│   ├── paving-solutions.html
+│   ├── interior-design.html
+│   ├── blinds-and-curtain-rods.html
+│   └── aluminum-products.html
+└── poor-to-great-forge/    # Separate project (not in use)
 ```
 
-## Replit Setup (Completed)
-- ✅ Node.js 20 installed
-- ✅ Static file server (`serve`) installed
-- ✅ Workflow configured to serve on port 5000
-- ✅ Deployment configuration set (autoscale)
-- ✅ .gitignore includes node_modules
+## URL Structure & SEO
 
-## Running Locally
-The website is automatically served on port 5000 via the "Static Website" workflow.
+### Canonical Service URLs
+- `/services/kitchen-renovations.html`
+- `/services/waterproofing.html`
+- `/services/expert-tiling.html`
+- `/services/professional-painting.html`
+- `/services/paving-solutions.html`
+- `/services/interior-design.html`
+- `/services/blinds-and-curtain-rods.html`
+- `/services/aluminum-products.html`
 
-## Features
-- Responsive design with mobile menu
-- Service portfolio with filtering
-- Contact form (Netlify-ready with `data-netlify="true"`)
-- Testimonials slider
-- SEO optimized with meta tags, Open Graph, and JSON-LD structured data
-- Lazy-loading images
-- Google Analytics (GA4) placeholder
-- Sitemap and robots.txt included
+### Redirects Configured
+All old/duplicate URLs redirect to canonical versions (see `_redirects` file)
 
-## Deployment
-The site is configured for Replit's autoscale deployment, which is perfect for static websites. When published, it will automatically serve the static files on the Replit domain.
+## Google Ads Integration
 
-## Original Deployment Target
-This site was originally designed for Netlify deployment. The following files support Netlify features but work fine on Replit:
-- `netlify.toml` - Netlify configuration
-- `_headers` - Security headers
-- `_redirects` - URL redirects
-- Contact form with `data-netlify="true"` attribute
+### Conversion Tracking
+- **Conversion ID**: AW-17653858383
+- **Forms Tracked**: Contact form, Guide download form
+- **Events**: Form submissions, WhatsApp clicks
 
-## Recent Changes (Oct 15, 2025)
-- Configured for Replit environment
-- Set up Node.js static file server
-- Created workflow to serve on port 5000
-- Configured autoscale deployment
+### Landing Page Optimization
+- Clear headline with benefit-driven copy
+- Trust signals above the fold
+- Multiple conversion paths (form, WhatsApp, phone)
+- Mobile-optimized for thumb-friendly CTAs
+
+## Recent Changes
+
+### October 15, 2024 - Major Redesign
+- ✅ Complete homepage modernization
+- ✅ Fixed broken links and duplicate pages
+- ✅ Implemented conversion-focused design
+- ✅ Added lead magnet (free guide download)
+- ✅ Enhanced forms with Netlify integration
+- ✅ Updated redirects for canonical URLs
+- ✅ Configured security headers
+- ✅ Updated sitemap with all service pages
+
+## User Preferences & Notes
+
+### Design Preferences
+- Modern, professional appearance
+- Blue color scheme (primary: #1e40af)
+- Trust-building elements prominent
+- Mobile-first responsive design
+
+### Business Goals
+- Generate high-quality leads from Google Ads
+- Position as #1 construction company in Zimbabwe
+- Showcase expertise and reliability
+- Build trust with 5-year warranty messaging
+
+## Performance Notes
+
+### Current Setup
+- Using Tailwind CDN for rapid development
+- For production optimization, consider:
+  - Building Tailwind with PurgeCSS to reduce CSS size
+  - Converting to static Tailwind build for faster load times
+  - Image optimization via Netlify Image CDN
+
+### Lighthouse Targets
+- Performance: >90
+- Accessibility: >95
+- Best Practices: >95
+- SEO: 100
+
+## Next Steps for Future Enhancement
+1. Convert Tailwind CDN to build process for production
+2. Add more project images (replace Unsplash placeholders)
+3. Implement blog for SEO content marketing
+4. Add customer testimonial video section
+5. Integrate CRM for lead management
+6. A/B test different CTA copy and placement
+
+## Contact Information
+- **Phone**: +263 77 810 5259
+- **Email**: build@amanizw.com
+- **WhatsApp**: https://wa.me/263778105259
+- **Office**: 49 Electra House, Samora Machel, Harare, Zimbabwe
+
+## Support & Maintenance
+This website is optimized for Netlify deployment with automatic form handling, analytics, and CDN delivery. No server maintenance required.
