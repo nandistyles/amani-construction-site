@@ -36,6 +36,16 @@ header svg{display:inline-block}
 #floating-cta{backdrop-filter:blur(6px)}
 #floating-cta:focus{transform:translateY(-2px);box-shadow:0 6px 18px rgba(14,165,233,0.18)}
 
+/* Floating WhatsApp Button */
+#floating-whatsapp {
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.18);
+  animation: floatWABtn 1.8s ease-in-out infinite alternate;
+}
+@keyframes floatWABtn {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+
 /* Hero image full-bleed + position */
 .hero-image{position:relative;height:100%;width:100%;display:block}
 section.relative{min-height:420px}

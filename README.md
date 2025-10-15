@@ -1,3 +1,13 @@
+## Netlify Environment Variables
+
+Set these in your Netlify dashboard for dynamic contact info:
+
+- `WHATSAPP_NUMBER` (e.g. 263778105259)
+- `CONTACT_EMAIL` (e.g. build@amanizw.com)
+
+## Netlify Analytics
+
+Netlify Analytics is enabled in `netlify.toml` for privacy-friendly traffic stats.
 ## Deploying with Git & Netlify
 
 ### 1. Initialize a Git repository (PowerShell)

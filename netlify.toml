@@ -1,5 +1,14 @@
 [build]
   publish = "."
+
+[analytics]
+  enabled = true
+
+[context.production.environment]
+  WHATSAPP_NUMBER = "263778105259"
+  CONTACT_EMAIL = "build@amanizw.com"
+[build]
+  publish = "."
   command = ""
 
 [dev]
