@@ -1,0 +1,42 @@
+/* Custom styles to complement Tailwind utility classes */
+:root{
+  --brand-900: #0f172a;
+  --brand-800: #1e40af;
+}
+
+body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+
+/* Hero background — replace URL with your hero photo or CDN image */
+.hero-bg{
+  background-image: linear-gradient(rgba(2,6,23,0.35), rgba(2,6,23,0.35)), url('https://placehold.co/1920x1080/334155/FFFFFF?text=Stunning+Kitchen+Renovation');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Portfolio item transitions */
+.portfolio-item{transition:transform .35s ease, opacity .35s ease}
+.portfolio-item.hidden{transform:scale(.95);opacity:0;height:0;margin:0;padding:0;overflow:hidden}
+
+/* Filter active button */
+.filter-btn-active{background-color:var(--brand-800);color:white}
+
+/* Small utilities */
+.blur-3xl{filter:blur(40px)}
+
+/* Make svg brand icon align */
+header svg{display:inline-block}
+
+/* Improve focus outlines for accessibility */
+:focus{outline:2px solid rgba(99,102,241,0.6);outline-offset:3px}
+
+/* Mobile menu animation */
+#mobile-menu{transition:opacity .2s ease, transform .2s ease}
+
+/* Floating CTA */
+#floating-cta{backdrop-filter:blur(6px)}
+#floating-cta:focus{transform:translateY(-2px);box-shadow:0 6px 18px rgba(14,165,233,0.18)}
+
+/* Hero image full-bleed + position */
+.hero-image{position:relative;height:100%;width:100%;display:block}
+section.relative{min-height:420px}
+@media(min-width:768px){section.relative{min-height:520px}}
