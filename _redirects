@@ -15,7 +15,8 @@
 /services/kitchen-renovations       /services/kitchen-renovations.html 200
 /services/interior-design           /services/interior-design.html 200
 /services/waterproofing             /services/waterproofing.html 200
-/thank-you                          /thank-you.html 301!
+/thank-you                          /thank-you.html 200
+/thank-you/                         /thank-you.html 200
 
 # Old paths for backwards compatibility
 /curtain-rods-blinds                /services/blinds-and-curtain-rods.html 200
