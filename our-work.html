@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Our Work - Portfolio | Amani Construction</title>
+  <meta name="description" content="See our completed construction and renovation projects in Harare. Kitchen renovations, waterproofing, tiling, and more by Amani Construction.">
+  <link rel="icon" href="/assets/amani-logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/index.html" class="text-2xl font-bold text-blue-900 flex items-center gap-2">
+        <img src="/assets/amani-logo.svg" alt="Amani Construction" width="42" height="42" class="rounded-lg">
+        <div>
+          <div class="text-xl font-bold text-gray-900">Amani Construction</div>
+          <div class="text-xs text-gray-600">Trusted Since 2010</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/services/kitchen-renovations.html" class="text-gray-600 hover:text-blue-800 font-medium">Services</a>
+        <a href="/our-work.html" class="text-blue-800 font-semibold">Our Work</a>
+        <a href="/about.html" class="text-gray-600 hover:text-blue-800 font-medium">About Us</a>
+        <a href="/staff.html" class="text-gray-600 hover:text-blue-800 font-medium">Our Staff</a>
+        <a href="/contact.html" class="text-gray-600 hover:text-blue-800 font-medium">Contact</a>
+      </div>
+      <a href="/index.html#quote" class="hidden lg:inline-block bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get a Free Quote</a>
+    </nav>
+  </header>
+
+  <main class="py-0">
+    <!-- Hero Section -->
+    <section class="bg-blue-900 text-white py-16 text-center">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Our Work</h1>
+        <p class="text-xl mb-6">Showcasing Excellence in Every Project</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-12 bg-white" id="work">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">Transforming Harare, One Project at a Time</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Over 127 completed projects and counting. See how we've helped homeowners and businesses transform their spaces.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <button class="filter-btn filter-btn-active px-6 py-2 rounded-full transition-all" data-filter="all">All Projects</button>
+          <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full transition-all" data-filter="kitchen">Kitchens</button>
+          <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full transition-all" data-filter="bathroom">Bathrooms</button>
+          <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full transition-all" data-filter="painting">Painting</button>
+          <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full transition-all" data-filter="exterior">Exterior</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="kitchen">
+            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?auto=format&fit=crop&w=600&q=80" alt="Modern Kitchen Renovation" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Modern Kitchen Transformation</h3>
+              <p class="text-gray-600 mb-4">Complete kitchen renovation with custom cabinetry and modern appliances in Borrowdale.</p>
+              <span class="text-blue-600 font-semibold">Kitchen Renovation</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="bathroom">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80" alt="Luxury Bathroom" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Bathroom Remodel</h3>
+              <p class="text-gray-600 mb-4">High-end bathroom with premium tiling and modern fixtures in Glen Lorne.</p>
+              <span class="text-blue-600 font-semibold">Bathroom Renovation</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="painting">
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" alt="Interior Painting" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Whole Home Interior Painting</h3>
+              <p class="text-gray-600 mb-4">Complete interior transformation with premium paints in Chisipite.</p>
+              <span class="text-blue-600 font-semibold">Painting Project</span>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="exterior">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Exterior Renovation" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Exterior Waterproofing & Painting</h3>
+              <p class="text-gray-600 mb-4">Complete exterior refresh with waterproofing in Highlands.</p>
+              <span class="text-blue-600 font-semibold">Exterior Work</span>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="kitchen">
+            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=600&q=80" alt="Kitchen Renovation" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Contemporary Kitchen Design</h3>
+              <p class="text-gray-600 mb-4">Sleek kitchen renovation with island and modern finishes in Avondale.</p>
+              <span class="text-blue-600 font-semibold">Kitchen Renovation</span>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="painting">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Commercial Painting" class="w-full h-64 object-cover" loading="lazy">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Office Space Transformation</h3>
+              <p class="text-gray-600 mb-4">Modern office painting with accent walls in CBD.</p>
+              <span class="text-blue-600 font-semibold">Commercial Painting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 text-center">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready to Start Your Project?</h3>
+          <p class="text-gray-600 mb-8">Join 127+ satisfied clients who've transformed their spaces with Amani Construction.</p>
+          <a href="/index.html#quote" class="inline-block bg-blue-800 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-blue-900 transition-colors">Get Your Free Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white mt-16">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <p class="text-blue-200 mb-2">&copy; 2024 Amani Construction. All Rights Reserved.</p>
+      <p class="text-blue-300">
+        <a href="/index.html" class="hover:underline">Home</a> | 
+        <a href="/contact.html" class="hover:underline">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Portfolio filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('filter-btn-active', 'bg-primary', 'text-white');
+          btn.classList.add('text-gray-700', 'bg-gray-100');
+        });
+        button.classList.add('filter-btn-active', 'bg-primary', 'text-white');
+        button.classList.remove('text-gray-700', 'bg-gray-100');
+
+        const filter = button.dataset.filter;
+        portfolioItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
