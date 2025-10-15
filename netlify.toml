@@ -7,11 +7,5 @@
 [context.production.environment]
   WHATSAPP_NUMBER = "263778105259"
   CONTACT_EMAIL = "build@amanizw.com"
-[build]
-  publish = "."
-  command = ""
-
-[dev]
-  port = 8888
 
 # No build step required; this is a static site. Deploy by connecting the repo or drag-and-drop the folder to Netlify.
